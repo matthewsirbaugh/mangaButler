@@ -1,6 +1,5 @@
 from flask import Flask, render_template, send_from_directory
 from concurrent.futures import ThreadPoolExecutor
-
 from flask.helpers import send_file
 from bs4 import BeautifulSoup
 from PIL import Image
@@ -52,7 +51,7 @@ def my_link():
                 img.save(images) 
                 print('Success')
             else:
-                print('Failure.')
+                print('Failure')
 
         with ThreadPoolExecutor(max_workers=32) as executor: #multithreading to speed up downloads
             executor.map(download, UrlList, imgList)
@@ -69,7 +68,7 @@ def my_link():
         except OSError as e:
             print("Error: %s : %s" % (path, e.strerror))
 
-        print("End")
         return send_file(directoryName + '.pdf', as_attachment=True)
+      
 if __name__ == '__main__':
   app.run(debug=True)
