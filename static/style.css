@@ -1,0 +1,177 @@
+/* Body */
+body {
+	font-family: Arial;
+	margin: auto;
+	max-width: 1600px;
+	background-color: bisque;
+	color: white;
+}
+
+hr {
+	border: 4px solid rgb(219, 85, 85);
+	border-radius: 5px;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+h2, h3 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+img {
+	min-height: fit-content;
+	height: auto;
+}
+
+#manga{
+	height: auto;
+}
+
+/* Header/Logo Title */
+.header {
+	padding: 60px;
+	text-align: center;
+	background-color: rgb(219, 85, 85);
+	color: white;
+  	margin-bottom: 10px;
+  	border-radius: 10px;
+  	padding-bottom: 10px;
+  	padding-top: 10px;
+  	box-shadow: rgba(255, 255, 255, 0.5) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* Style the top navigation bar */
+/* Not Active */
+
+#override:not(.active) {
+	background-color: rgb(255, 255, 255);
+	color: rgb(219, 85, 85);
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	border-radius: 0%;
+}
+
+/* Active */
+#override {
+	background-color: rgb(219, 85, 85);
+	color: white;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	border-left: 5px solid white;
+	border-radius:0%;
+}
+
+
+
+/* Column Container */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1600px;
+	margin: auto;
+	margin-bottom: 15px;
+}
+
+/* Sidebar/Left Column */
+.side {
+	flex: 28.5%;
+	background-color: white;
+	border: 3px solid rgb(219, 85, 85);
+	padding: 20px;
+	color: black;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	-webkit-box-shadow: -6px 5px 12px 4px #000000; 
+	box-shadow: -6px 5px 12px 4px #000000;
+}
+.middle {
+	flex: 2%;
+	background-color:bisque;
+}
+
+/* Main Column */
+.main {
+	flex: 69.5%;
+	background-color: white;
+	border: 3px solid rgb(219, 85, 85);
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	-webkit-box-shadow: -6px 5px 12px 4px #000000; 
+	box-shadow: -6px 5px 12px 4px #000000;
+	color: black;
+}
+
+/* Fake Image */
+.fakeimg {
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.profilePic{
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+/* Card Carousel */
+.cards-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.card img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.card {
+	margin: 0 1em;
+	box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+	border: none;
+	border-radius: 0;
+}
+
+.carousel-inner {
+	padding: 2em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	background-color: rgb(219, 85, 85);
+	width: 8vh;
+	height: 8vh;
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* Footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: rgb(219, 85, 85);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+	.row {
+		flex-direction: column;
+	}
+	.middle{
+		flex: 0%;
+	}
+
+}

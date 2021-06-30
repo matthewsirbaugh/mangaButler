@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page Title</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="static/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<nav class="nav nav-pills flex-xs-row sticky-top"> <a id="override" class="flex-sm-fill text-sm-center nav-link active" href="#">Home</a> <a id="override" class="flex-sm-fill text-sm-center nav-link" href="#">Manga List</a> <a id="override" class="flex-sm-fill text-sm-center nav-link" href="#">Forum</a> <a id="override" class="flex-sm-fill text-sm-center nav-link" href="#">About</a> </nav>
+	<!-- Header -->
+	<div class="header">
+        <img src="static/images/blackbutler.png" align="top" style="width: 250px; height: 250px; position: relative; right: auto; left: auto;">
+		<h1>Manga Butler</h1>
+		<p>Download Your Favorite Manga</p>
+	</div>
+	<!-- The flexible grid (content) -->
+	<div class="row">
+		<div class="side">
+			<img  src="static/images/profilepic.jpg" class="profilePic">
+			<h2 style="text-align:center; color: rgb(219, 85, 85);">MangoMan96[FaZe]</h2>
+			<h3 style="text-align: left;">My Recs</h3>
+			<div class="fakeimg" style="height:60px;">#1 Death Note</div>
+			<br>
+			<div class="fakeimg" style="height:60px;">#2 Attack On Titan</div>
+			<br>
+			<div class="fakeimg" style="height:60px;">#3 Yuri On Ice</div>
+		</div>
+
+		<div class="middle">
+
+		</div>
+
+		<div class="main">
+			<h2 style="text-align: left;">Popular</h2>
+			<hr>
+			<div id="carouselExampleControls" class="carousel slide" data-interval="false">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="cards-wrapper">
+							<div class="card"> <img  src="static/images/demonslayer.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img  src="static/images/beforethefall.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img  src="static/images/naruto.jpg" class="card-img-top" id="manga">
+
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="cards-wrapper">
+							<div class="card"> <img src="static/images/beforethefall.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img src="static/images/demonslayer.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img src="static/images/naruto.jpg" class="card-img-top" id="manga">
+
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="cards-wrapper">
+							<div class="card"> <img src="static/images/naruto.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img src="static/images/demonslayer.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img src="static/images/beforethefall.jpg" class="card-img-top" id="manga">
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+			</div>
+			<br>
+			<h2 style="text-align: left;">New</h2>
+			<hr>
+			<div id="carouselExampleControls2" class="carousel slide" data-interval="false">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="cards-wrapper">
+							<div class="card"> <img src="static/images/beforethefall.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img src="static/images/naruto.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img src="static/images/demonslayer.jpg" class="card-img-top" id="manga">
+
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="cards-wrapper">
+							<div class="card"> <img src="static/images/demonslayer.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img src="static/images/beforethefall.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img src="static/images/naruto.jpg" class="card-img-top" id="manga">
+
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="cards-wrapper">
+							<div class="card"> <img src="static/images/naruto.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img  src="static/images/demonslayer.jpg" class="card-img-top" id="manga">
+
+							</div>
+							<div class="card d-none d-md-block"> <img src="static/images/beforethefall.jpg" class="card-img-top" id="manga">
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+				<a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<h2>@BrysonSirbaughDev</h2> </div>
+</body>
+
+</html>
